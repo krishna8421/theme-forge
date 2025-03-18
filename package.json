@@ -1,0 +1,32 @@
+{
+  "name": "theme-forge",
+  "version": "0.0.1",
+  "description": "A library for creating and managing your brand's themes",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "prepare": "pnpm build",
+    "test": "vitest"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "theme",
+    "react",
+    "tailwind",
+    "shadcn",
+    "ui",
+    "theme-forge"
+  ],
+  "author": "Krishna Kumar <dev@krishnaaa.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
